@@ -7,6 +7,7 @@
       :get-child-payload="getChildPayload1"
       group-name="1"
       @drop="onDrop('listOne', $event)"
+      :animation-duration="1000"
     >
       <Draggable v-for="(item, $index) in listOne" :key="$index">
         <Card :item="item" />
@@ -19,6 +20,7 @@
       :get-child-payload="getChildPayload2"
       group-name="1"
       @drop="onDrop('listTwo', $event)"
+      :animation-duration="1000"
     >
       <Draggable v-for="(item, $index) in listTwo" :key="$index">
         <Card :item="item" />
@@ -31,6 +33,7 @@
       :get-child-payload="getChildPayload3"
       group-name="1"
       @drop="onDrop('listThree', $event)"
+      :animation-duration="1000"
     >
       <Draggable v-for="(item, $index) in listThree" :key="$index">
         <Card :item="item" />
@@ -43,6 +46,7 @@
       :get-child-payload="getChildPayload4"
       group-name="1"
       @drop="onDrop('listFour', $event)"
+      :animation-duration="1000"
     >
       <Draggable v-for="(item, $index) in listFour" :key="$index">
         <Card :item="item" />
